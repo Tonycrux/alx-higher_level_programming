@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-# 5-to_json_string.py
-"""Defines a string-to-JSON function."""
+"""difining save_to_json_file function"""
+
+
 import json
 
 
-def to_json_string(my_obj):
-    """Return the JSON representation of a string object."""
-    return json.dumps(my_obj)
+def save_to_json_file(my_obj, filename):
+    """writes an object to text file"""
+    with open(filename, 'w', encoding="utf-8") as f:
+        json.dump(my_obj, f)
