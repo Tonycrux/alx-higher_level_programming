@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-# 1-number_of_lines.py
-"""Defines a text file line-counting function."""
+"""defining write_file with two arguments"""
 
 
-def number_of_lines(filename=""):
-    """Return the number of lines in a text file."""
-    lines = 0
-    with open(filename) as f:
-        for line in f:
-            lines += 1
-    return lines
+def write_file(filename="", text=""):
+    """reads filename with utf-8"""
+    with open(filename, "w", encoding='utf-8') as f:
+        return f.write(text)
