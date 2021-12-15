@@ -1,9 +1,8 @@
 #!/usr/bin/node
-if (process.argv.length <= 3) {
-  console.log(0);
-} else {
-  const args = process.argv.map(Number)
-    .slice(2, process.argv.length)
-    .sort((a, b) => a - b);
-  console.log(args[args.length - 2]);
+let nextMax = 0;
+const args = process.argv.slice(2);
+if (args.length > 1) {
+  args.sort();
+  nextMax = args[args.length - 2];
 }
+console.log(nextMax);
