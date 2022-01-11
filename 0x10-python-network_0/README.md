@@ -1,1 +1,1 @@
-CRUL, Headers, requests, HTTP PROTOCOL
+## PYTHON NETWORK
