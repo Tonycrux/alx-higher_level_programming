@@ -1,5 +1,6 @@
 #!/usr/bin/node
 // JS Script
+
 let fs = require('fs');
 fs.readFile(process.argv[2], function (err, contents) {
   if (!err) {
